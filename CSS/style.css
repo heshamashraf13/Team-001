@@ -1,0 +1,35 @@
+:root {
+  /* text color */
+
+  --text-main: #000000;
+  --text-muted: #00000066; /*opacity 40%*/
+  --small-font: #00000099; /*opacity 60%*/
+  --white: #ffffff;
+  /* background-color */
+  --home-bg: #f2f0f1;
+  --card-bg: #f0eeed;
+  
+  /* other colors */
+  --yellow: #ffc633;
+  --green: #01ab31;
+  --bink: #ff33331a;
+  --red: #ff3333;
+
+  /* shirt colors */
+  --first: #4f4631;
+  --second: #314f4a;
+  --third: #314f4a;
+
+  /* filter color  */
+
+  --Vivid-Green: #00c12b;
+  --Bright-Red: #f50606;
+  --Sunflower-Yellow: #f5dd06;
+  --Orange: #f57906;
+  --Sky-Blue: #06caf5;
+  --Royal-Blue: #063af5;
+  --violet: #7d06f5;
+  --Hot-Pinkt: #f506a4;
+  --White: #ffffff;
+  --black: #000000;
+}
