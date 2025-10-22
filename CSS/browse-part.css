@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-
-
   /* text color */
 
   --text-main: #000000;
@@ -14,7 +11,7 @@
   /* background-color */
   --home-bg: #f2f0f1;
   --card-bg: #f0eeed;
-  
+
   /* other colors */
   --yellow: #ffc633;
   --green: #01ab31;
@@ -41,65 +38,91 @@
 }
 
 /*Start Browse*/
-.browse-card{
-   background-color: #f2f0f1;
-   width: 1000px  ;
+.browse-card {
+  background-color: #f2f0f1;
+  width: 1000px;
 }
-.browse-card h2{
- font-family: "Arimo", sans-serif;
-   font-weight:600;
+.browse-card h2 {
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 .small-cards-1 {
   border: none;
   border-radius: 20px;
+  height: 200px;
+
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/casual.png);
+  background-position: center;
+  background-size: cover;
 }
 .small-cards-2 {
   border: none;
   border-radius: 20px;
+  height: 200px;
+
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/formal.png);
+  background-position: center;
+  background-size: cover;
 }
-.small-cards .card-1{
-  width:100%;
+.small-cards-3 {
+  border: none;
+  border-radius: 20px;
+  height: 200px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/party.png);
+  background-position: center;
+  background-size: cover;
 }
-.small-cards .card-2{
-  width:100%;
+.small-cards-4 {
+  border: none;
+  border-radius: 20px;
+  height: 200px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/gym.png);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .small-cards-1:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
 }
 .small-cards-2:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
+}
+.small-cards-3:hover {
+  transform: translateY(-10px);
+}
+.small-cards-4:hover {
+  transform: translateY(-10px);
 }
 
-.small-card-img {
-  height: 200px;
-  
-}
 
 .small-cards h5 {
   font-weight: 650;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* Start Customers */
 
-.testimonial-section{
+.testimonial-section {
   padding: 80px 0;
   overflow: hidden;
   position: relative;
 }
 
-.testimonial-section h2{
+.testimonial-section h2 {
   text-align: left;
   font-weight: 800;
   font-size: 2.2rem;
   padding-bottom: 50px;
   padding-left: 50px;
-
 }
 
 .scroll-wrapper {
@@ -130,7 +153,7 @@
 }
 
 .testimonial-card .stars {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 18px;
   margin-bottom: 8px;
 }

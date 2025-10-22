@@ -27,9 +27,523 @@
     <!-- navbar -->
     <div id="navbar"></div>
 
-    <!-- navbar -->
-     <div id="footer"></div>
+    <div class="container-fluid my-5 px-5">
+      <div class="row g-4">
+        <div
+          class="col-md-3 col-lg-2 bg-white p-4 rounded-4 shadow-sm filter-section"
+        >
+          <h5 class="fw-bold mb-4 ">Filters</h5>
+<hr>
+          <div class="">
+            <ul class="nav nav-link flex-column mb-3">
+              <li class="nav-item">
+                <a class="nav-link text-dark  d-flex justify-content-between  " href="#"
+                  >T-Shirt <i class="bi bi-chevron-right ms-1"></i
+                ></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-dark d-flex justify-content-between" href="#"
+                  >Shorts <i class="bi bi-chevron-right ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark d-flex justify-content-between" href="#"
+                  >Shirts <i class="bi bi-chevron-right ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark d-flex justify-content-between" href="#"
+                  >Hoodie <i class="bi bi-chevron-right ms-1"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark  d-flex justify-content-between" href="#"
+                  >Jeans <i class="bi bi-chevron-right ms-1"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+<hr>
+          <div class="accordion" id="filterAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingPrice">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsePrice"
+                  aria-expanded="false"
+                >
+                  Price
+                </button>
+              </h2>
+              <div
+                id="collapsePrice"
+                class="accordion-collapse collapse"
+                data-bs-parent="#filterAccordion"
+              >
+                <div class="accordion-body">
+                  <input type="range" class="form-range" min="50" max="500" />
+                  <div class="d-flex justify-content-between">
+                    <span>$50</span>
+                    <span>$500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingColor">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseColor"
+                  aria-expanded="false"
+                >
+                  Colors
+                </button>
+              </h2>
+              <div
+                id="collapseColor"
+                class="accordion-collapse collapse"
+                data-bs-parent="#filterAccordion"
+              >
+                <div class="accordion-body d-flex flex-wrap gap-2">
+                  <div class="color-circle" style="background: #000"></div>
+                  <div class="color-circle" style="background: #f00"></div>
+                  <div class="color-circle" style="background: #00f"></div>
+                  <div class="color-circle" style="background: #0f0"></div>
+                  <div class="color-circle" style="background: #ff0"></div>
+                  <div
+                    class="color-circle border"
+                    style="background: #fff"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSize">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSize"
+                  aria-expanded="false"
+                >
+                  Size
+                </button>
+              </h2>
+              <div
+                id="collapseSize"
+                class="accordion-collapse collapse"
+                data-bs-parent="#filterAccordion"
+              >
+                <div class="accordion-body d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-dark btn-sm">S</button>
+                  <button class="btn btn-outline-dark btn-sm">M</button>
+                  <button class="btn btn-outline-dark btn-sm">L</button>
+                  <button class="btn btn-outline-dark btn-sm">XL</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingStyle">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseStyle"
+                  aria-expanded="false"
+                >
+                  Dress Style
+                </button>
+              </h2>
+              <div
+                id="collapseStyle"
+                class="accordion-collapse collapse"
+                data-bs-parent="#filterAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                      />Casual
+                    </li>
+                    <li>
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                      />Formal
+                    </li>
+                    <li>
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                      />Party
+                    </li>
+                    <li>
+                      <input class="form-check-input me-2" type="checkbox" />Gym
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-dark w-100 rounded-pill mt-4">
+            Apply Filters
+          </button>
+        </div>
+
+        
+        <div class="col-md-9 col-lg-10">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold">Casual Collection</h3>
+            <p class="text-muted mb-0">Showing 1–8 of 100 products</p>
+          </div>
+
+          <div class="row justify-content-center g-4">
+            <!-- card 1 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/greenshirt.png"
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Vertical Striped Shirt</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">5.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $212 </span>
+                <span class="old-price"> $232 </span>
+                <span class="discount-badge"> -30% </span>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/oshirt.png "
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Courage Grephic T-ShirtT</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">4.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $145 </span>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/short.png"
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Loose Fit Bermuda Shorts</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">3.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <p class="text-start">$80</p>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/blackjeans.png "
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Faded Skinny Jeans</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i
+                    class="fa-solid fa-star-half text-warning yellow-half-star"
+                  ></i>
+                </span>
+                <span>
+                  <span class="number active">4.5/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $210 </span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/greenshirt.png"
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Vertical Striped Shirt</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">5.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $212 </span>
+                <span class="old-price"> $232 </span>
+                <span class="discount-badge"> -30% </span>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/oshirt.png "
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Courage Grephic T-ShirtT</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">4.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $145 </span>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/short.png"
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Loose Fit Bermuda Shorts</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">3.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <p class="text-start">$80</p>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/blackjeans.png "
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Faded Skinny Jeans</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i
+                    class="fa-solid fa-star-half text-warning yellow-half-star"
+                  ></i>
+                </span>
+                <span>
+                  <span class="number active">4.5/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $210 </span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/greenshirt.png"
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Vertical Striped Shirt</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">5.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $212 </span>
+                <span class="old-price"> $232 </span>
+                <span class="discount-badge"> -30% </span>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/oshirt.png "
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Courage Grephic T-ShirtT</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">4.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $145 </span>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/short.png"
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Loose Fit Bermuda Shorts</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                </span>
+                <span>
+                  <span class="number active">3.0/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <p class="text-start">$80</p>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0 shadow-sm">
+                <img
+                  src="../images/blackjeans.png "
+                  class="card-img img-fluid"
+                  alt=""
+                />
+              </div>
+              <h5 class="fw-bold mt-3 text-start">Faded Skinny Jeans</h5>
+              <div class="rating text-center mb-2">
+                <span>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i class="bi bi-star-fill text-warning yellow-star"></i>
+                  <i
+                    class="fa-solid fa-star-half text-warning yellow-half-star"
+                  ></i>
+                </span>
+                <span>
+                  <span class="number active">4.5/</span
+                  ><span class="number inactive text-black-50">5</span>
+                </span>
+              </div>
+              <div class="text-start">
+                <span class="new-price fw-bold"> $210 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div id="footer"></div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -38,30 +552,30 @@
     ></script>
     <script>
       fetch("../components/footer.html")
-      .then(response => response.text())
-      .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
-</script>
-
-<script>
-  fetch("../components/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
-
-      const topBar = document.getElementById("top-bar");
-      const closeTopBar = document.getElementById("closeTopBar");
-
-      if (topBar && closeTopBar) {
-        closeTopBar.addEventListener("click", () => {
-          topBar.style.display = "none";
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
         });
-      } else {
-        console.error("Top bar elements not found!");
-      }
-    });
-</script>
-<script src="../JS/main.js"></script>
-</body>
+    </script>
+
+    <script>
+      fetch("../components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+
+          const topBar = document.getElementById("top-bar");
+          const closeTopBar = document.getElementById("closeTopBar");
+
+          if (topBar && closeTopBar) {
+            closeTopBar.addEventListener("click", () => {
+              topBar.style.display = "none";
+            });
+          } else {
+            console.error("Top bar elements not found!");
+          }
+        });
+    </script>
+    <script src="../JS/main.js"></script>
+  </body>
 </html>
