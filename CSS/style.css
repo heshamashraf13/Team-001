@@ -96,9 +96,9 @@ body {
 
 .hero-contain {
   background-image: url(../images/Rectangle-new.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 550px;
   margin-bottom: 0%;
 }
@@ -469,4 +469,96 @@ margin-bottom: 15px;
     text-align: center;
     gap: 10px;
   }
+}
+
+
+  .filter-section {
+        top: 80px;
+        height: fit-content;
+        border: solid 2px rgba(0, 0, 1, 0.1);
+      }
+
+      .color-circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .product-card img {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s;
+      }
+
+
+      .img-profil img {
+  border-radius: 80%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+}
+
+
+.cover {
+  background: linear-gradient(90deg, #dbe7ff 0%, #fff0f5 100%);
+}
+
+
+input.form-control:focus,
+select.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(111, 78, 240, 0.1);
+}
+
+
+.profile-card {
+  border: none;
+  height: 700px;
+}
+
+
+.name-container {
+  max-width: 1000px;
+}
+
+
+.edit-btn {
+  background: #6f4ef0;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #5a3edf;
+}
+
+
+.icon-box {
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: #f1efff;
+  color: #6f4ef0;
+}
+
+
+.add-email-btn {
+  background: #fff;
+  border: 1px solid #6f4ef0;
+  color: #6f4ef0;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.add-email-btn:hover {
+  background: #6f4ef0;
+  color: #fff;
 }

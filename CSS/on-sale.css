@@ -1,0 +1,20 @@
+.on-sale h2 {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 2px;
+}
+.discount-badge {
+  background-color: #dc3545;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+.new-price {
+  color: #000;
+}
