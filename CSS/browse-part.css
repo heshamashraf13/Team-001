@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* text color */
+
+  --text-main: #000000;
+  --text-muted: #00000066; /*opacity 40%*/
+  --small-font: #00000099; /*opacity 60%*/
+  --white: #ffffff;
+  /* background-color */
+  --home-bg: #f2f0f1;
+  --card-bg: #f0eeed;
+
+  /* other colors */
+  --yellow: #ffc633;
+  --green: #01ab31;
+  --bink: #ff33331a;
+  --red: #ff3333;
+
+  /* shirt colors */
+  --first: #4f4631;
+  --second: #314f4a;
+  --third: #314f4a;
+
+  /* filter color  */
+
+  --Vivid-Green: #00c12b;
+  --Bright-Red: #f50606;
+  --Sunflower-Yellow: #f5dd06;
+  --Orange: #f57906;
+  --Sky-Blue: #06caf5;
+  --Royal-Blue: #063af5;
+  --violet: #7d06f5;
+  --Hot-Pinkt: #f506a4;
+  --White: #ffffff;
+  --black: #000000;
+}
+
+/*Start Browse*/
+.browse-card {
+  background-color: #f2f0f1;
+  width: 1000px;
+}
+.browse-card h2 {
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.small-cards-1 {
+  border: none;
+  border-radius: 20px;
+  height: 200px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/casual.png);
+  background-position: center;
+  background-size: cover;
+}
+.small-cards-2 {
+  border: none;
+  border-radius: 20px;
+  height: 200px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/formal.png);
+  background-position: center;
+  background-size: cover;
+}
+.small-cards-3 {
+  border: none;
+  border-radius: 20px;
+  height: 200px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/party.png);
+  background-position: center;
+  background-size: cover;
+}
+.small-cards-4 {
+  border: none;
+  border-radius: 20px;
+  height: 200px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-image: url(../images/gym.png);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.small-cards-1:hover {
+  transform: translateY(-10px);
+}
+.small-cards-2:hover {
+  transform: translateY(-10px);
+}
+.small-cards-3:hover {
+  transform: translateY(-10px);
+}
+.small-cards-4:hover {
+  transform: translateY(-10px);
+}
+
+
+.small-cards h5 {
+  font-weight: 650;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Start Customers */
+
+.testimonial-section {
+  padding: 80px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-section h2 {
+  text-align: left;
+  font-weight: 800;
+  font-size: 2.2rem;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.scroll-wrapper {
+  display: flex;
+  width: 200%;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  min-width: 320px;
+  max-width: 320px;
+  text-align: left;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card .stars {
+  color: #ffd700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.testimonial-card h5 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.verified {
+  color: #16a34a;
+  margin-left: 5px;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+/* End Customers */
+/*End Browse*/
